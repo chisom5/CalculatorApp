@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Scientific Calculator App</h2>
+
+        <form id="calculator">
+            <div class="form-group">
+                <div class="col-md-4" class="display">
+                    <input type="text" id="show" class="form-control" readonly size="18">
+                </div>
+            </div><br />
+            <div class="keys">
+                <button type="button" class="btn btn-md btn-primary" value="1" name="btn1" onclick="display(btn1.value)"> 1</button>
+                <button type="button" class="btn btn-md btn-primary" value="2" name="btn2" onclick="display(btn2.value)"> 2</button>
+                <button type="button" class="btn btn-md btn-primary" value="3" name="btn3" onclick="display(btn3.value)"> 3</button>
+                <button type="button" class="btn btn-md btn-primary" value="+" name="addbtn" onclick="display(addbtn.value)"> +</button>
+                <button type="button" class="btn btn-md btn-primary" value="%" name="btnpercent" onclick="percent(btnpercent)">%</button>
+
+                <br />
+
+                <button type="button" class="btn btn-md btn-primary" value="4" name="btn4" onclick="display(btn4.value)"> 4</button>
+                <button type="button" class="btn btn-md btn-primary" value="5" name="btn5" onclick="display(btn5.value)"> 5</button>
+                <button type="button" class="btn btn-md btn-primary" value="6" name="btn6" onclick="display(btn6.value)"> 6</button>
+                <button type="button" class="btn btn-md btn-primary" value="-" name="minusbtn" onclick="display(minusbtn.value)"> -</button>
+                <button type="button" class="btn btn-md btn-primary" value="fact" name="btnfact" onclick="factorial(btnfact.value)">n!</button>
+
+                <br />
+
+                <button type="button" class="btn btn-md btn-primary" value="7" name="btn7" onclick="display(btn7.value)"> 7</button>
+                <button type="button" class="btn btn-md btn-primary" value="8" name="btn8" onclick="display(btn8.value)"> 8</button>
+                <button type="button" class="btn btn-md btn-primary" value="9" name="btn9" onclick="display(btn9.value)"> 9</button>
+                <button type="button" class="btn btn-md btn-primary" value="*" name="timesbtn" onclick="display(timesbtn.value)"> *</button>
+                <button type="button" class="btn btn-md btn-primary" value="Sin" name="btnSin" onclick="sin(btnSin)">Sin</button>
+
+                <br />
+
+                <button type="button" class="btn btn-md btn-primary" value="0" name="btn0" onclick="display(btn0.value)"> 0</button>
+                <button type="button" class="btn btn-md btn-primary" value="." name="dotbtn" onclick="display(dotbtn.value)"> .</button>
+                <button type="button" class="btn btn-md btn-primary" value="<-- " name="backbtn" onclick="backspace()"> <-- </button>
+                <button type="button" class="btn btn-md btn-primary" value="/" name="dividebtn" onclick="display(dividebtn.value)"> /</button>
+                <button type="button" class="btn btn-md btn-primary" value="Cos" name="btnCos" onclick="cos(btnCos)">Cos</button>
+
+                <br />
+                <button type="button" class="btn btn-md btn-primary" value="+/-" name="plusminus" onclick="signChange()">+/-</button>
+                <button type="button" class="btn btn-md btn-primary" value="C" name="clear" onclick="display(clear.value)">C</button>
+                <button type="button" class="btn btn-md btn-primary" value="pi" name="btnPI" onclick="pier(btnPI)"> PI</button>
+                <button type="button" class="btn btn-md btn-primary" value="sqrt" name="btnSqrt" onclick="square(btnSqrt)"> Sqrt</button>
+                <button type="button" class="btn btn-md btn-primary" value="Tan" name="btnTan" onclick="tan(btnTan)">Tan</button>
+
+                <br />
+
+                <button type="button" class="btn btn-md btn-primary" value="In" name="btnLog" onclick="log(btnLog)">Log </button>
+                <button type="button" class="btn btn-md btn-primary" value=" , " name="btnExp" onclick="exponent(btnExp)"> EXP</button>
+                <button type="button" class="btn btn-md btn-primary" value="x^y" name="btnX^Y" onclick="raiseTo(base,power)">X^Y</button>
+                <button type="button" class="btn btn-md btn-primary" value="(" name="btnOpen" onclick="display()">(</button>
+                <button type="button" class="btn btn-md btn-primary" value=")" name="btnClose" onclick="display()">)</button>
+
+                <br />
+
+                <button type="button" class="btn btn-lg btn-primary" value="=" name="equal" onclick="answer()">=</button>
+            </div>
+        </form>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/calculator.js"></script>
+
+</body>
+
+</html>

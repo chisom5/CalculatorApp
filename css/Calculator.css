@@ -1,0 +1,191 @@
+/* Major Style */
+
+.container h2 {
+    margin-left: 400px;
+    margin-bottom: 20px;
+}
+
+#calculator {
+    background-color: #505050;
+    width: 35%;
+    height: 484px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.form-control {
+    height: 50px;
+    font-size: 15px;
+    display: inline-block;
+    margin-top: 28px;
+    margin-left: 2px;
+    text-align: right;
+}
+
+@media (min-width: 992px) {
+    .col-md-4 {
+        width: 396px;
+    }
+}
+
+
+/*  style Button-Primary */
+
+.btn-primary {
+    width: 15.7%;
+    height: 40px;
+    margin-left: 9px;
+    margin-bottom: 14px;
+}
+
+.btn-lg {
+    width: 364px;
+    height: 50px;
+}
+
+button#comma {
+    font-weight: bold;
+}
+
+.keys {
+    width: 100%;
+    display: inline-block;
+    margin: 15px 7px 15px 7px;
+}
+
+
+/* MEDIA QUERIE Mini-Laptop screen view */
+
+@media (max-width:1199px) {
+    #calculator {
+        width: 38%;
+    }
+    .form-control {
+        width: 90%;
+        margin-left: 0px;
+    }
+    .container h2 {
+        margin-left: 310px;
+        font-size: 2.9rem;
+    }
+    .keys {
+        width: 100%;
+        display: inline-block;
+        margin: 15px 5px 15px 5px;
+    }
+    .btn-lg {
+        width: 333px;
+    }
+}
+
+
+/* MEDIA QUERIE Tablet Screen View */
+
+@media (max-width:991px) {
+    #calculator {
+        width: 47%;
+        height: 500px;
+    }
+    .form-control {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .container h2 {
+        margin-left: 221px;
+        font-size: 2.7rem;
+    }
+    .keys {
+        width: 100%;
+        display: inline-block;
+        margin: 0px 1px 15px 0px;
+    }
+    .btn-lg {
+        width: 317px;
+    }
+}
+
+
+/* Tablet view */
+
+@media (max-width :768px) {
+    #calculator {
+        width: 50%;
+        height: 500px;
+    }
+    .form-control {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .container h2 {
+        margin-left: 202px;
+        font-size: 2.7rem;
+    }
+    .keys {
+        width: 100%;
+        display: inline-block;
+        margin-left: 4px;
+    }
+    .btn-lg {
+        width: 332px;
+    }
+}
+
+
+/* MEDIA QUERIE Mobile large screen */
+
+@media (max-width:425px) {
+    #calculator {
+        width: 77%;
+        height: 500px;
+    }
+    .form-control {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .container h2 {
+        margin-left: 107px;
+        font-size: 1.7rem;
+    }
+    .keys {
+        width: 100%;
+        display: inline-block;
+        margin-left: 2px;
+    }
+    .btn-primary {
+        width: 15%;
+    }
+    .btn-lg {
+        width: 269px;
+        height: 44px;
+    }
+}
+
+
+/* MEDIA QUERIE Mobile medium Screen */
+
+@media (max-width:375px) {
+    #calculator {
+        width: 85%;
+        height: 500px;
+    }
+    .form-control {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .container h2 {
+        margin-left: 85px;
+        font-size: 1.5rem;
+    }
+    .keys {
+        width: 100%;
+        display: inline-block;
+        margin-left: 0px;
+    }
+    .btn-primary {
+        width: 15%;
+    }
+    .btn-lg {
+        width: 270px;
+        height: 44px;
+    }
+}
