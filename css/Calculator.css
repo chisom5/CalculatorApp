@@ -39,7 +39,7 @@
 }
 
 .btn-lg {
-    width: 364px;
+    width: 92%;
     height: 50px;
 }
 
@@ -56,7 +56,7 @@ button#comma {
 
 /* MEDIA QUERIE Mini-Laptop screen view */
 
-@media (max-width:1199px) {
+@media (max-width:1199px) and (min-width:990px) {
     #calculator {
         width: 38%;
     }
@@ -74,14 +74,15 @@ button#comma {
         margin: 15px 5px 15px 5px;
     }
     .btn-lg {
-        width: 333px;
+        width: 92.5%;
+        height: 45px;
     }
 }
 
 
 /* MEDIA QUERIE Tablet Screen View */
 
-@media (max-width:991px) {
+@media (max-width:991px) and (min-width:768px) {
     #calculator {
         width: 47%;
         height: 500px;
@@ -100,42 +101,17 @@ button#comma {
         margin: 0px 1px 15px 0px;
     }
     .btn-lg {
-        width: 317px;
-    }
-}
-
-
-/* Tablet view */
-
-@media (max-width :768px) {
-    #calculator {
-        width: 50%;
-        height: 500px;
-    }
-    .form-control {
-        width: 100%;
-        margin-left: 0px;
-    }
-    .container h2 {
-        margin-left: 202px;
-        font-size: 2.7rem;
-    }
-    .keys {
-        width: 100%;
-        display: inline-block;
-        margin-left: 4px;
-    }
-    .btn-lg {
-        width: 332px;
+        width: 93%;
+        height: 45px;
     }
 }
 
 
 /* MEDIA QUERIE Mobile large screen */
 
-@media (max-width:425px) {
+@media (max-width:767px)and(min-width:378px) {
     #calculator {
-        width: 77%;
+        width: 50%;
         height: 500px;
     }
     .form-control {
@@ -147,15 +123,16 @@ button#comma {
         font-size: 1.7rem;
     }
     .keys {
-        width: 100%;
+        width: 98%;
         display: inline-block;
-        margin-left: 2px;
+        margin: 0px;
+        margin-left: 3px !important;
     }
     .btn-primary {
         width: 15%;
     }
     .btn-lg {
-        width: 269px;
+        width: 93.5%;
         height: 44px;
     }
 }
@@ -163,7 +140,8 @@ button#comma {
 
 /* MEDIA QUERIE Mobile medium Screen */
 
-@media (max-width:375px) {
+
+/* @media (max-width:425px) {
     #calculator {
         width: 85%;
         height: 500px;
@@ -188,4 +166,4 @@ button#comma {
         width: 270px;
         height: 44px;
     }
-}
+} */
