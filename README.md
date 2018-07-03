@@ -10,3 +10,4 @@ which the javascript functions are in an external file name
 ### Things remaining to do
 * I haven't added function to enable my parentheesis to display
 i.e the bracket
+* for the responsiveness, other view works fine expect the mobile view.
