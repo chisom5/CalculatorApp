@@ -8,7 +8,8 @@
 #calculator {
     background-color: #505050;
     width: 35%;
-    height: 484px;
+    min-height: 484px;
+    max-height: 520px;
     border-radius: 5px;
     margin: 0 auto;
 }
@@ -109,24 +110,23 @@ button#comma {
 
 /* MEDIA QUERIE Mobile large screen */
 
-@media (max-width:767px)and(min-width:378px) {
+@media (max-width:767px) {
     #calculator {
-        width: 50%;
-        height: 500px;
+        width: 46%;
     }
     .form-control {
         width: 100%;
         margin-left: 0px;
     }
     .container h2 {
-        margin-left: 107px;
-        font-size: 1.7rem;
+        margin-left: 223px;
+        font-size: 2.5rem;
     }
     .keys {
-        width: 98%;
+        width: 100%;
         display: inline-block;
         margin: 0px;
-        margin-left: 3px !important;
+        margin-left: 4px !important;
     }
     .btn-primary {
         width: 15%;
@@ -137,11 +137,35 @@ button#comma {
     }
 }
 
+@media (max-width:578px) {
+    #calculator {
+        width: 65%;
+        height: 500px;
+    }
+    .form-control {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .container h2 {
+        margin-left: 130px;
+        font-size: 2.3rem;
+    }
+    .keys {
+        width: 100%;
+        display: inline-block;
+        margin: 0px;
+        margin-left: 6px !important;
+    }
+    .btn-primary {
+        width: 15%;
+    }
+    .btn-lg {
+        width: 90%;
+        height: 44px;
+    }
+}
 
-/* MEDIA QUERIE Mobile medium Screen */
-
-
-/* @media (max-width:425px) {
+@media (max-width:448px) {
     #calculator {
         width: 85%;
         height: 500px;
@@ -152,18 +176,48 @@ button#comma {
     }
     .container h2 {
         margin-left: 85px;
-        font-size: 1.5rem;
+        font-size: 2.1rem;
     }
     .keys {
         width: 100%;
         display: inline-block;
-        margin-left: 0px;
+        margin: 0px;
+        margin-left: 6px !important;
     }
     .btn-primary {
         width: 15%;
     }
     .btn-lg {
-        width: 270px;
+        width: 90%;
         height: 44px;
     }
-} */
+}
+
+@media (max-width:375px) {
+    #calculator {
+        width: 100%;
+        height: 500px;
+    }
+    .form-control {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .container h2 {
+        margin-left: 60px;
+        font-size: 1.5rem;
+    }
+    .keys {
+        width: 100%;
+        display: inline-block;
+        margin: 0px;
+        margin-left: 4px !important;
+    }
+    .btn-primary {
+        width: 15%;
+        /* margin-left: 8px; */
+    }
+    .btn-lg {
+        width: 91%;
+        height: 44px;
+    }
+}
