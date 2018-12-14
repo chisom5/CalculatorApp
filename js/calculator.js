@@ -1,5 +1,26 @@
 var txtField = document.getElementById('show');
 
+// for adding keyboard functionality
+document.addEventListener('keypress',function(event){
+    if(event.defaultPrevented){
+    return;
+    }
+    var key = event.key || event.keyCode;
+    calc(key);
+    }); 
+
+function calc(key) {
+    var allowedValues = ['0','1','2','3','4','5','6','7','8','9','+','-','/','*','(',')','.'];
+    var txt;
+    if(key === 'Enter'){
+        answer(txt);
+        return;
+    }
+    if(allowedValues.includes(key)){
+        display(key);
+    }
+}
+
 function display(txt) {
     txtField.value += txt;
 
@@ -22,10 +43,19 @@ function signChange() {
     txtField.value = nem;
 }
 
+//executed when equals to btn is clicked
 function answer(txt) {
     txt = txtField.value;
+    // if there is no input, this is to prevent undefined
+    // from showing in the text field
+    if(txt != ""){
+    try {
     txt = eval(txt);
-    txtField.value = txt;
+    txtField.value = txt;     
+    } catch (error) {
+     txtField.value = "Syntax error";   
+    }
+    }
 }
 
 function cos(txt) {
@@ -49,8 +79,10 @@ function tan(txt) {
 
 function log(txt) {
     txt = txtField.value;
+    if(txt != ""){
     txt = Math.log10(txt);
     txtField.value = txt;
+    }
 }
 
 function exponent(txt) {
@@ -82,7 +114,6 @@ function square(txt) {
 function raiseTo(base, power) {
     base = txtField.value;
     console.log(base);
-
 }
 
 function factorial(txt) {
