@@ -9,9 +9,5 @@ which the javascript functions are in an external file name
 * It is responsive
 * It is a scientific Calculator with most function feature in it
 
-### Things remaining to do
-
-* I haven't added function to enable my parenthesis to display
-i.e the bracket
-* below is the screenshot of the application.
+This is the screenshot of the application.
 ![Screenshot](cal.png)
